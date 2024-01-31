@@ -1,0 +1,36 @@
+.navbar_container {
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_central {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--title);
+    font-size: 2.5rem;
+}
+
+.nav_central a {
+    color: #F4F1F8;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.nav_central ul {
+    background-color: var(--grey);
+}
+
+.nav_central ul li a {
+    font-size: 1.2rem;
+    color: black;
+    font-family: var(--text);
+    width: 85%;
+    border-radius: 5px;
+}
+
+.navbar_icons a {
+    margin: 0 0.5rem;
+}

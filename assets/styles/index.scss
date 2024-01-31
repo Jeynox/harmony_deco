@@ -1,0 +1,197 @@
+.header_index {
+    background: url(../../assets/images/image_mariage.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 27rem;
+}
+
+.header_index h1{
+    font-family: var(--title);
+    font-size: 6rem;
+    color: #F4F1F8;
+}
+
+.h1-index {
+    font-family: var(--title);
+    font-size: 5rem;
+    color: black;
+    margin: 1.5rem 0rem;
+    text-align: center;
+}
+
+.index-grid-materiel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 4rem;
+}
+
+.index-grid-materiel a.index-mobilier {
+    background: url(../../assets/images/mobilier.png);
+    background-position: center;
+    background-size: cover;
+    width: 34rem;
+    height: 19rem;
+    border-radius: 20px;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+}
+
+.index-grid-materiel a.index-art {
+    background: url(../../assets/images/art.png);
+    background-position: center;
+    background-size: cover;
+    width: 34rem;
+    height: 19rem;
+    border-radius: 20px;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+}
+
+.index-grid-materiel a.index-nappes {
+    background: url(../../assets/images/nappes.png);
+    background-position: center;
+    background-size: cover;
+    width: 34rem;
+    height: 19rem;
+    border-radius: 20px;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+}
+
+.index-grid-materiel a.index-deco {
+    background: url(../../assets/images/deco.png);
+    background-position: center;
+    background-size: cover;
+    width: 34rem;
+    height: 19rem;
+    border-radius: 20px;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+}
+
+.index-grid-materiel a.index-cuisine {
+    background: url(../../assets/images/cuisine.png);
+    background-position: center;
+    background-size: cover;
+    width: 34rem;
+    height: 19rem;
+    border-radius: 20px;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+}
+
+.index-grid-materiel a.index-audio {
+    background: url(../../assets/images/audio.png);
+    background-position: center;
+    background-size: cover;
+    width: 34rem;
+    height: 19rem;
+    border-radius: 20px;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+}
+
+.index-grid-materiel a div {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.index-grid-materiel a div h3 {
+    display: none;
+}
+
+.index-grid-materiel a div:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 17, 24, 0.55);
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-grid-materiel a div:hover h3{
+    display: block;
+    font-family: var(--text);
+    font-size: 2.5rem;
+    color: black;
+    background-color: var(--beige);
+    padding: 0.5rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.index-livraison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 5.5rem;
+}
+
+.index-line-top {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.index-line-bottom {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.index-livraison-container {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-livraison-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text);
+    color: black;
+    margin: 0 1rem;
+}
+
+.index-livraison-container div p {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.index-livraison-container svg {
+    width: 10rem;
+}
+
+.index-nouveautes a {
+    background: url('../../assets/images/nouveautes.png');
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.index-nouveautes a div {
+    width: 100%;
+    height: 100%;
+}
+
+.index-nouveautes a div:hover {
+    background-color: rgba(244, 241, 248, 0.2);
+    backdrop-filter: blur(2px);
+    transition: 0.2s;
+}
+
+.index-nouveautes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
