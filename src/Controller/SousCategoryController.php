@@ -2,20 +2,21 @@
 
 namespace App\Controller;
 
-use App\Repository\SousCategoryRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Entity\SousCategory;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class SousCategoryController extends AbstractController
 {
     #[Route('/sousCategory/{id}', name: 'app_sous_category')]
-    public function index(SousCategoryRepository $sousCategoryRepository): Response
+    public function index(SousCategory $sousCategory): Response
     {
-        $sousCategories = $sousCategoryRepository->findAll();
+       $produits = $sousCategory->getProduits();
 
         return $this->render('sous_category/index.html.twig', [
-            'sousCategories' => $sousCategories,
+            'sousCategory' => $sousCategory,
+            'produits' => $produits
         ]);
     }
 }
