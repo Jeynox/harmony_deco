@@ -1,0 +1,118 @@
+.header-sign {
+    background-color: var(--blue);
+    padding: 3.8rem;
+}
+
+.main-sign {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-sign h1 {
+    margin: 0.5rem;
+    font-family: var(--text);
+    font-size: 3rem;
+}
+
+.carte-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 5rem;
+}
+
+.sign-carte-gauche {
+    background: url(../../assets/images/sign.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 40rem;
+}
+
+.sign-carte-gauche h2 {
+    font-family: var(--title);
+    font-size: 5rem;
+    color: var(--white);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.sign-carte-droite {
+    background-color: var(--grey);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign-input input {
+    padding: 0.2rem 0.5rem;
+    width: 15rem;
+    margin: 1rem;
+    border: black solid 1px;
+    background-color: var(--white);
+}
+
+.sign-input input::placeholder {
+    font-family: var(--text);
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.termes-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.termes-sign label{
+    font-family: var(--text);
+    font-size: 1rem;
+    color: black;
+}
+
+.termes-sign input {
+    margin: 0 0.5rem;
+    background-color: black;
+}
+
+.button-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.button-sign button {
+    padding: 0.2rem 0.8rem;
+    border: solid 1px black;
+    font-family: var(--text);
+    font-size: 1rem;
+    background-color: var(--white);
+}
+
+.button-sign button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transition: 0.2s;
+}
+
+.sign-carte-droite a {
+    text-decoration: none;
+    font-family: var(--text);
+    font-size: 1.2rem;
+    color: black;
+}
+
+.sign-carte-droite a:hover {
+    color: var(--white);
+    transition: 0.2s;
+}
