@@ -5,14 +5,7 @@
             <a class="" aria-current="page" href="{{ path('app_home') }}">Home</a>
             <div class="dropdown">
                 <a class="bg-transparent dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Matériel</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Art de la table</a></li>
-                    <li><a class="dropdown-item" href="#">Mobilier</a></li>
-                    <li><a class="dropdown-item" href="#">Décoration</a></li>
-                    <li><a class="dropdown-item" href="#">Nappes</a></li>
-                    <li><a class="dropdown-item" href="#">Matériel cuisine</a></li>
-                    <li><a class="dropdown-item" href="#">Matérien audio</a></li>
-                </ul>
+                {{ component('navbar') }}
             </div>
             <div class="dropdown">
                 <a class="bg-transparent dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prestations</a>

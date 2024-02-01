@@ -1,0 +1,7 @@
+<div{{ attributes }}>
+    <ul class="dropdown-menu">
+        {% for category in this.categories %}
+            <li><a class="dropdown-item" href="{{ path('app_category', {'id': category.id }) }}">{{ category.name}}</a></li>
+        {% endfor %}
+    </ul>
+</div>

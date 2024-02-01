@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class='carte-droite'>
-            <div id="map"></div>
+        <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=2rue%20des%20ch%C3%A8vres%20a%20plumes+(Harmony%20d%C3%A9co)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Find Population on Map</a></iframe></div>
             <div class='contact-info-container'>
                 <div class='contact-info'>
                     <div class='contact-info-element'>
@@ -63,18 +63,4 @@
         </div>
     </div>
 </main>
-    {% block javascripts %}
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    <script>
-        var map = L.map('map').setView([48.845669, 2.343441], 17);
-        
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([48.845669, 2.343441]).addTo(map)
-    </script>
-    {% endblock %}
 {% endblock %}
