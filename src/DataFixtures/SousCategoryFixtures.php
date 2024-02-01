@@ -37,7 +37,7 @@ class SousCategoryFixtures extends Fixture implements DependentFixtureInterface
                 $sousCategory = new SousCategory();
                 $sousCategory->setCategory($this->getReference($key));
                 $sousCategory->setName($name);
-                $sousCategory->setImage($faker->imageUrl());
+                $sousCategory->setImage($faker->imageUrl(560, 350));
                 $sousCategory->setDescription($faker->sentence(10));$manager->persist($sousCategory);
                 $this->addReference('sousCategory_' . $name, $sousCategory);
             }
