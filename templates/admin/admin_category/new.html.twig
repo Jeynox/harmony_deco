@@ -1,0 +1,14 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}New Category{% endblock %}
+
+{% block body %}
+    <h1 class='text-center'>Ajouter une catégorie</h1>
+
+    <div class='d-flex justify-content-center'>
+        {{ include('admin/admin_category/_form.html.twig') }}
+    </div>
+    
+
+    <a href="{{ path('app_admin_category_index') }}" class='lien-category'>Retourner aux catégories</a>
+{% endblock %}
