@@ -21,6 +21,22 @@ class ContactRepository extends ServiceEntityRepository
         parent::__construct($registry, Contact::class);
     }
 
+    
+    public function countMessages(): int
+    {
+        $queryBuilder = $this->createQueryBuilder('c');
+
+        // Utilisez la méthode COUNT pour compter les messages
+        $queryBuilder->select('COUNT(c.id) as messageCount');
+
+        // Exécutez la requête et obtenez le résultat
+        $result = $queryBuilder->getQuery()->getSingleResult();
+
+        // Renvoyez le nombre de messages
+        return $result['messageCount'];
+    }
+
+
 //    /**
 //     * @return Contact[] Returns an array of Contact objects
 //     */
