@@ -5,7 +5,9 @@
     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Dashboard admin</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
-    <a href=""></a>
+  <div class="offcanvas-body admin-navbar">
+    <a href="{{ path('app_home') }}">Accueil</a><br>
+    <a href="{{ path('app_admin_dashboard') }}">Dashboard</a><br>
+    <a href="{{ path('app_gestions_produit') }}">Gestion des produits</a>
   </div>
 </div>
