@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}{{ parent() }} - Accueil{% endblock %}
 
 {% block body %}
     <header class='header_index'>
@@ -9,7 +9,7 @@
     <main>
         <div class='index-materiel'>
             <h1 class='h1-index'>Matériel</h1>
-            <div class='index-grid-materiel'>
+            <div class='index-grid-materiel' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
                 <a href="" class='index-mobilier'>
                     <div>
                         <h3>Mobilier</h3>
@@ -17,32 +17,32 @@
                 </a>
                 <a href="" class='index-art'>
                     <div>
-                        <h3>Mobilier</h3>
+                        <h3>Art de la table</h3>
                     </div>
                 </a>
                 <a href="" class='index-nappes'>
                     <div>
-                        <h3>Mobilier</h3>
+                        <h3>Nappes</h3>
                     </div>
                 </a>
                 <a href="" class='index-deco'>
                     <div>
-                        <h3>Mobilier</h3>
+                        <h3>Décorations</h3>
                     </div>
                 </a>
                 <a href="" class='index-cuisine'>
                     <div>
-                        <h3>Mobilier</h3>
+                        <h3>Materiel cuisine</h3>
                     </div>
                 </a>
                 <a href="" class='index-audio'>
                     <div>
-                        <h3>Mobilier</h3>
+                        <h3>Materiel audio</h3>
                     </div>
                 </a>
             </div>
         </div>
-        <div class='index-livraison'>
+        <div class='index-livraison' data-aos="zoom-in" data-aos-duration="1500">
             <div class="index-line-top"></div>
             <div class='index-livraison-container'>
                 <div>
@@ -60,7 +60,7 @@
             </div>
             <div class="index-line-bottom"></div>
         </div>
-        <div class='index-nouveautes'>
+        <div class='index-nouveautes' data-aos="fade-down" data-aos-duration="1500">
             <h1 class='h1-index'>Nouveautés</h1>
             <a href="">
                 <div>

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - category {% endblock %}
+
+{% block body %}
+<header class='header-category'></header>
+<main class='category-main'>
+    <h1>{{ category.name }}</h1>
+    <div class='category-grid'>
+        {% for sousCategory in sousCategories %}
+            <a href="{{ path('app_sous_category', {'id': sousCategory.id}) }}" class='category card' style='background-image: url({{ asset( '/uploads/' ~ sousCategory.image ) }})' background-position=' center' background-size='cover'>
+                <div>
+                    <p>{{ sousCategory.description }}</p>
+                    <h3>{{ sousCategory.name }}</h3>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

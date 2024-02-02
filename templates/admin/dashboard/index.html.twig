@@ -1,0 +1,86 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Admin dashboard{% endblock %}
+
+{% block body %}
+    <main class='main-dashboard'>
+        <div class='carte-dashboard-container'>
+            <div class='carte-dashboard carte1'>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width='100px'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#7b00a8" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                </div>
+                <h2>{{ userCount }}</h2>
+                <p>Comptes crées</p>
+            </div>
+            <div class='carte-dashboard carte2'>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width='100px'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#350075" d="M155.6 17.3C163 3 179.9-3.6 195 1.9L320 47.5l125-45.6c15.1-5.5 32 1.1 39.4 15.4l78.8 152.9c28.8 55.8 10.3 122.3-38.5 156.6L556.1 413l41-15c16.6-6 35 2.5 41 19.1s-2.5 35-19.1 41l-71.1 25.9L476.8 510c-16.6 6.1-35-2.5-41-19.1s2.5-35 19.1-41l41-15-31.3-86.2c-59.4 5.2-116.2-34-130-95.2L320 188.8l-14.6 64.7c-13.8 61.3-70.6 100.4-130 95.2l-31.3 86.2 41 15c16.6 6 25.2 24.4 19.1 41s-24.4 25.2-41 19.1L92.2 484.1 21.1 458.2c-16.6-6.1-25.2-24.4-19.1-41s24.4-25.2 41-19.1l41 15 31.3-86.2C66.5 292.5 48.1 226 76.9 170.2L155.6 17.3zm44 54.4l-27.2 52.8L261.6 157l13.1-57.9L199.6 71.7zm240.9 0L365.4 99.1 378.5 157l89.2-32.5L440.5 71.7z"/></svg>
+                </div>
+                <h2>45</h2>
+                <p>Évenements couverts</p>
+            </div>
+            <div class='carte-dashboard carte3'>
+                <a href="">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width='100px'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#003899" d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"/></svg>
+                    </div>
+                    <h2>{{ messages }}</h2>
+                    <p>Messages</p>
+                </a>
+            </div>
+            <div class='carte-dashboard carte4'>
+                <div>
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width='100px'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#00348f" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg> 
+                </div>
+                <h2>Agenda</h2>
+            </div>
+        </div>
+        <div class='reseaux-dashboard'>
+            <div class='carte-reseau carte5'>
+                <div class='facebook'>
+                    <img src="{{ asset('build/images/logo-facebook-blanc.png')}}" alt="" width='70px'>
+                </div>
+                <div class='reseaux-info'>
+                    <div class='reseau-info-gauche'>
+                        <h3>1,2k</h3>
+                        <p>Amis</p>
+                    </div>
+                    <div class='reseau-info-droite'>
+                        <h3>250</h3>
+                        <p>Posts</p>
+                    </div>
+                </div>
+            </div>
+            <div class='carte-reseau carte6'>
+                <div class='instagram'>
+                    <img src="{{ asset('build/images/logo-instagram-blanc.png') }}" alt="" width='70px'>
+                </div>
+                <div class='reseaux-info'>
+                    <div class='reseau-info-gauche'>
+                        <h3>70,5k</h3>
+                        <p>Followers</p>
+                    </div>
+                    <div class='reseau-info-droite'>
+                        <h3>1M</h3>
+                        <p>J'aimes</p>
+                    </div>
+                </div>
+            </div>
+            <div class='carte-reseau carte7'>
+                <div class='linkedIn'>
+                    <img src="{{ asset('build/images/logo-linkedin-blanc.png') }}" alt="" width='70px'>
+                </div>
+                <div class='reseaux-info'>
+                    <div class='reseau-info-gauche'>
+                        <h3>1k</h3>
+                        <p>Réseau</p>
+                    </div>
+                    <div class='reseau-info-droite'>
+                        <h3>25</h3>
+                        <p>Posts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

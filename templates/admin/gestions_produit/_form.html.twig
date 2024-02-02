@@ -1,0 +1,11 @@
+<div>
+    {{ form_start(form) }}
+        {{ form_widget(form.name) }}
+        {{ form_widget(form.quantity) }}
+        {{ form_widget(form.description) }}
+        {{ form_widget(form.price) }}
+        {# {{ form_widget(form.image) }} #}
+        {{ form_widget(form.sousCategory) }}
+        <button type='submit'>Valider</button>
+    {{ form_end(form) }}
+</div>

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+@import 'bootstrap/scss/bootstrap';
+@import '../root.scss';
+@import 'dashboard.scss';
+@import 'navbar_admin.scss';
+@import 'gestion_produits.scss';
+@import 'categories.scss';
+
+body {
+    background-color: #F4F1F8; 
+}

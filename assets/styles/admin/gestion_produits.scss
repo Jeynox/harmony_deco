@@ -1,0 +1,18 @@
+.main-gestion-produits h1 {
+    font-family: var(--text);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.gestion-nouveau {
+    text-align: center;
+    font-family: var(--text);
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+}
+
+.main-gestion-produits table {
+    border: solid black 1px;
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Sign{% endblock %}
+
+{% block body %}
+    <header class='header-sign'></header>
+    <main class='main-sign'>
+        <h1>Inscription</h1>
+        <div class='carte-sign'>
+            <div class='sign-carte-gauche'>
+                <h2>Bienvenue</h2>
+            </div>
+            <div class='sign-carte-droite'>
+                {{ form_start(form) }}
+                    <div class='sign-input'>
+                        {{ form_row(form.name) }}
+                    </div>
+                    <div class='sign-input'>
+                        {{ form_row(form.firstname) }}
+                    </div>
+                    <div class='sign-input'>
+                        {{ form_row(form.email) }}
+                    </div>
+                    <div class='sign-input'>
+                        {{ form_row(form.plainPassword) }}
+                    </div>
+                    <div class='termes-sign'>
+                        {{ form_row(form.agreeTerms) }}
+                    </div>
+                    <div class='button-sign'>
+                        <button type='submit'>S'inscrire</button>
+                    </div>
+                {{ form_end(form) }}
+                <a href="{{ path('app_login' ) }}">Se connecter</a>
+            </div>
+        </div>
+    </main>
+{% endblock %}

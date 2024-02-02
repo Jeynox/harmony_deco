@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Harmony Déco, evenementiel, décoration pour mariages et autres evenements{% endblock %}</title>
+        <link rel="icon" href="{{ asset('build/images/logo.png') }}">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('admin') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('admin') }}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        {% endblock %}
+    </head>
+    {% include './admin/includes/_navbar.html.twig' %}
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>

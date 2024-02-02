@@ -1,0 +1,84 @@
+.header-produit {
+    background-color: var(--blue);
+    padding: 3.8rem;
+}
+
+.main-produit {
+    margin: 2rem 17rem;
+}
+
+.main-produit h1 {
+    font-family: var(--title);
+    font-size: 6rem;
+    color: black;
+    text-align: center;
+}
+
+.produit-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.produit-images {
+    height: 25rem;
+    width: 25rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.produit-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2rem;
+    width: 70%;
+}
+
+.produit-text {
+    border: solid black 1px;
+    margin: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.7rem;
+}
+
+.produit-description div p {
+    font-family: var(--text);
+    font-size: 1.5rem;
+}
+
+.produit-description div input {
+    margin: 3rem 1rem;
+    font-family: var(--text);
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--white);
+    border: black 1px solid;
+}
+
+.produit-description div{
+    font-family: var(--text);
+    font-size: 1.2rem;
+}
+
+.produit-button {
+    padding: 0.2rem 0.8rem;
+    border: solid 1px black;
+    font-family: var(--text);
+    font-size: 1rem;
+    background-color: var(--white);
+    margin: 4rem;
+}
+
+.produit-button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transition: 0.2s;
+}

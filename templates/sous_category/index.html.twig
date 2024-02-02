@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Sous-catégories{% endblock %}
+
+{% block body %}
+<header class='header-sousCat'></header>
+<main class='sousCat-main'>
+    <h1>{{ sousCategory.name }}</h1>
+    <div class='sousCat-grid'>
+        {% for produit in produits %}
+            <a href="{{ path('app_produit', {'id': produit.id })}}"class='sousCat card' style='background-image: url({{ asset( '/uploads/' ~ produit.image ) }})' background-position=' center' background-size='cover'>
+                <div>
+                    <h3>Chaise {{ produit.name }}</h3>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

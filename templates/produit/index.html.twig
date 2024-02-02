@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Produits{% endblock %}
+
+{% block body %}
+<header class='header-produit'></header>
+<main class='main-produit'>
+    <h1>Chaise {{ produit.name }}</h1>
+    <div class='produit-container'>
+        <div class='produit-images' style='background-image: url({{ asset( '/uploads/' ~ produit.image ) }})'>
+        </div>
+        <div class='produit-description'>
+            <div class='produit-text'>
+                <p>{{ produit.description }}</p>
+                <p>Prix de la location: {{ produit.price }}€/unité</p>
+            </div>
+            <div>Quantité: <input type="number" min='10', max='{{ produit.quantity }}' value='10'> Il reste {{ produit.quantity }} chaises {{ produit.name }}</div>
+            <button class='produit-button' type='submit'>Ajouter au panier</button>
+        </div>
+    </div>
+</main>
+{% endblock %}
