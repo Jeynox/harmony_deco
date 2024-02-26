@@ -40,16 +40,19 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
     }
 
     public function countRegisteredUsers(): int
-{
-    $entityManager = $this->getEntityManager();
+    {
+        $entityManager = $this->getEntityManager('u');
 
-    $query = $entityManager->createQueryBuilder()
-        ->select('COUNT(u.id)')
-        ->from('App\Entity\User', 'u')
-        ->getQuery();
-
-    return $query->getSingleScalarResult();
-}
+        $query = $entityManager->createQueryBuilder()
+            //on selectionne l'élément que l'on souhaite et on utilise la methode COUNT
+            ->select('COUNT(u.id)')
+            //On selectionne l'entité
+            ->from('App\Entity\User', 'u')
+            //On execute la requete
+            ->getQuery();
+            //On renvoie le resultat
+        return $query->getSingleScalarResult();
+    }
 
 //    /**
 //     * @return User[] Returns an array of User objects

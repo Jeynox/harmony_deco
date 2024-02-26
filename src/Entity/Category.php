@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\CategoryRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: CategoryRepository::class)]
@@ -15,6 +16,15 @@ class Category
     #[ORM\Column]
     private ?int $id = null;
 
+    #[Assert\NotBlank(
+        message: 'Cette case ne dois pas etre vide'
+    )]
+    #[Assert\Length(
+        min: 2,
+        max: 255,
+        minMessage: 'Le nom choisi est trop court, il doit contenir {{ limit }} caractères minimum',
+        maxMessage: 'Votre message ne peut contenir plus de {{ limit }} caractères',
+    )]
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
